@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            .mySlides {display:none;}
+            .b{
+            background-color: #282E34;
+            height: 60px;
+        }
+            a{
+            color:white;
+            font-size: 40px;
+            text-decoration: none;
+            padding: 8px 8px;
+            height: 40px;
+        }
+        a:hover{
+        	text-decoration: underline;
+        	text-decoration-color: black; 
+            border: none;
+            }
+            .bgimg-1 , .bgimg-2 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+            }
+            .bgimg-1 {
+  background-image: url("coff.jpg");
+  min-height: 400px;
+}
+            .bgimg-2 {
+  background-image: url("cafe2.jpg");
+  min-height: 400px;
+}
+            .caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+            
+            
+            @media only screen and (max-device-width: 1024px) {
+   .bgimg-1 , .bgimg-2{
+    background-attachment: scroll;
+  }
+            }
+        </style>
+    </head>
+    
+    <body bgcolor="black">
+        <div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="cafe2.jpg" style="width:100%; height: 300px;">
+  <img class="mySlides" src="cafe10.jpg" style="width:100%; height: 300px;">
+  <img class="mySlides" src="cafe4.jpg" style="width:100%; height: 300px;">
+            <img class="mySlides" src="foodies.jpg" style="width:100%; height: 300px;">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); 
+}
+</script>
+        <div class="b">
+       <center> <a href="project.html">Home</a>&nbsp&nbsp&nbsp&nbsp
+        <a  href="menus.html">Our Menu</a>&nbsp&nbsp&nbsp&nbsp
+        <a href="reservation.html">Reservation & Event</a>&nbsp&nbsp&nbsp&nbsp
+        <a href="about.html">About</a>
+    </center>
+</div>
+        <div class="bgimg-1">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
+  </div>
+</div>
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 40px;text-align: justify;">
+  	<table>
+  		<tr>
+  			<td>
+                <h3 style="color: white; font-family: fantasy"><a href="#">FOOD</a><hr></h3>
+  			</td>
+            <td ><h3 style="color: white; font-family: fantasy"><a href="coffe.html">DRINKS</a><hr></h3></td>
+            
+  		</tr>
+  		<tr>
+            <td><img src="pizza.jpg" width="570px" height="350px"></td>
+  			<td><img src="drinks.webp" height="350px" width="570px"></td>
+            
+  		</tr>
+  		
+  	</table>
+  </div>
+</div>
+        <div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
+  </div>
+</div>
+        <table style="background-color: black;" width="100%">
+		
+		<tr>
+		
+		<td>
+			<b style="color: white; font-size: 25px; font-family: fantasy;">STAY UP TO DATE</b>
+			<br><a href="reservation.html" style="background-color: black; border-color: white; color: white; font-size: 20px;">Sign In</a><br>
+			<b style="color: white; font-size: 20px">OR</b><br>
+			<b style="color: white; font-size: 20px">FOLLOW US ON</b><br>
+			<a href="https://www.facebook.com/pages/?category=your_pages"><img src="fb.png" width="35" height="40"></a>&nbsp&nbsp&nbsp
+				<img src="insta.jpg" width="30" height="30">
+		</td>
+		<td>
+			<b style="color: white; font-size: 25px; font-family: fantasy;">D'Foodies cafe</b>
+			<br>
+			<a href="reservation.html" style="font-size: 20px;color: white;">CONTACT US</a>
+			<br>
+					<a href="about.html" style="font-size: 20px;color: white;">ABOUT US</a>
+		</td>
+		<td>
+			<a href="home.html" style="color: white; font-size: 20px">SUGGESTION</a>
+		</td>
+	</tr>
+</table>
+    </body>
+</html>

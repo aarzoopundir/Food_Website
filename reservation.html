@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html><head>
+<style>
+    a{
+            color:white;
+            font-size: 40px;
+            text-decoration: none;
+            padding: 8px 8px;
+            height: 40px;
+        }
+        a:hover{
+        	text-decoration: underline;
+        	text-decoration-color: black; 
+            border: none;
+        }
+        .b{
+            background-color: #282E34;
+            height: 60px;
+        }
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+    input[type=number]{
+        padding:12px;
+        display: inline-block;
+        border: 1px solid #ccc;
+  border-radius: 4px;
+    }
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+    .d{
+        background-color: beige;
+    }
+    .para{
+        font-size: 20px;
+       
+        font-family: cursive;
+    }
+    
+</style>
+    <script>
+        function validateForm() {
+  var x = document.forms["myForm"]["firstname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+        function funct(){
+            alert("do you want to submit the form?")
+        }
+    </script>
+    </head>
+<body>
+    <center><img id="demo" src="foodies.jpg" height="450px;" width="1250px"></center>
+    <div class="b">
+       <center> <a href="envo.html">Home</a>&nbsp&nbsp&nbsp&nbsp
+        <a  href="menus.html">Our Menu</a>&nbsp&nbsp&nbsp&nbsp
+        <a href="reservation.html">Reservation & Event</a>&nbsp&nbsp&nbsp&nbsp
+        <a href="about.html">About</a>
+    </center>
+</div>
+</div>
+<div  class="d">
+<h1 style="text-decoration: underline; color:brown;">HOST YOUR PARTY AT D'FOODIES CAFE</h1>
+    <p class="para">We can’t wait for you to host your next event in our gorgeous 1,000 square foot event space! Wow your guests with the inspiring & quirky decor while they are wined and dined on local craft beer, farm fresh and scratch-made food, and locally roasted coffee. There is no event like a D'foodies event.<br>For parties of 6-12 guests, give us a call at 817.945.1545 to make a reservation.<br>For parties of 13+, or for more information about our event space, contact our Large Party Coordinator using the form below!</p>
+    </div>
+<div>
+  <form  name="myForm" action="/project.html" onsubmit="return validateForm()" method="post">
+    <label for="fname">First Name*</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." >
+
+    <label for="country">Email Address*</label>
+    <input type="text" id="ename" name="email" placeholder="Your email address.." required>
+      <label for="contact">Phone number*</label>
+    <input type="number" id="cname" name="phone" placeholder="Your contact number.." required>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <label for="date">Date of your event</label>
+    <input type="number" id="dname" name="date" placeholder="Date.."><br><br>
+  <label for="fname">Nature of the event</label>
+    <input type="text" id="fname" name="firstname" placeholder="e.g bithday party or bussiness dinner.." required>
+    <input type="submit" value="Submit" onclick="funct()">
+  </form>
+</div>
+<table style="background-color: black;" width="100%">
+		
+		<tr>
+		
+		<td>
+			<b style="color: white; font-size: 25px; font-family: fantasy;">STAY UP TO DATE</b>
+			<br><a href="signin.html" style="background-color: black; border-color: white; color: white; font-size: 20px;">Sign In</a><br>
+			<b style="color: white; font-size: 20px">OR</b><br>
+			<b style="color: white; font-size: 20px">FOLLOW US ON</b><br>
+			<a href="https://www.facebook.com/pages/?category=your_pages"><img src="fb.png" width="35" height="40"></a>&nbsp&nbsp&nbsp
+				<img src="insta.jpg" width="30" height="30">
+		</td>
+		<td>
+			<b style="color: white; font-size: 25px; font-family: fantasy;">D'Foodies cafe</b>
+			<br>
+			<a href="reservation.html" style="font-size: 20px;color: white;">CONTACT US</a>
+			<br>
+					<a href="about.html" style="font-size: 20px;color: white;">ABOUT US</a>
+		</td>
+		<td>
+			<a href="project.html" style="color: white; font-size: 20px">SUGGESTION</a>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
